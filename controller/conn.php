@@ -26,10 +26,10 @@ $config = [
 ];
 
 /* Live Database Connection */
-$conn_mysql_host="aa16v3pw7v67tv8.cn3bwky93pfs.ap-southeast-1.rds.amazonaws.com";
-$conn_mysql_username="vlkenDB";
-$conn_mysql_password="oEOGALjT659DiM82vf8VZK9yNF6";
-$conn_mysql_database="ebdb";
+$conn_mysql_host="localhost";
+$conn_mysql_username="snacncom_hexsys";
+$conn_mysql_password="abccy1982";
+$conn_mysql_database="snacncom_smartnano";
 
 /* Development Database Connection */
 $conn_mysql_host_dev="localhost";
