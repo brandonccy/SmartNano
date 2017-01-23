@@ -29,10 +29,6 @@
               </ul>
             </li>
 
-            <li<?php if($page=="partners"){ ?> class="active"<?php } ?>>
-              <a href="/partners"><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i><?=translate("header_menu_partners", $selectLanguage)?></a>
-            </li>
-
             <li<?php if($page=="contact-us"){ ?> class="active"<?php } ?>>
               <a href="/contact-us"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i><?=translate("header_menu_contact", $selectLanguage)?></a>
             </li>
@@ -53,10 +49,6 @@
               $outputLanguage="zh-cn"; 
             }
             ?>
-            <li>
-              <a href="/?lang=<?=$outputLanguage?>&ref=<?=$ref?>"><i class="fa fa-language fa-fw" aria-hidden="true"></i>
-              <?=translate("header_menu_language", $selectLanguage)?></a>
-            </li>
             
           </ul>
         </nav>
