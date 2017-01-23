@@ -1,5 +1,5 @@
 <?php
-$row="";$webTitle="VLKen 威肯专业美发产品";
+$row="";$webTitle="Smart Nano";
 $systemError="";$systemSucces="";
 if(empty($_SESSION["systemError"])){
 	$_SESSION["systemError"]="";

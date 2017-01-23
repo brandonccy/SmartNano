@@ -7,7 +7,7 @@
 #
 # Host: aa16v3pw7v67tv8.cn3bwky93pfs.ap-southeast-1.rds.amazonaws.com (MySQL 5.6.27-log)
 # Database: ebdb
-# Generation Time: 2016-10-05 02:01:58 +0000
+# Generation Time: 2017-01-23 12:14:23 +0000
 # ************************************************************
 
 
@@ -59,16 +59,6 @@ CREATE TABLE `db_admin` (
   PRIMARY KEY (`admin_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-LOCK TABLES `db_admin` WRITE;
-/*!40000 ALTER TABLE `db_admin` DISABLE KEYS */;
-
-INSERT INTO `db_admin` (`admin_id`, `admin_name`, `website_title`, `nav_options`, `web_launch`, `admin_email`, `admin_password`, `admin_stat`, `admin_unique`, `admin_log_date`, `admin_log_time`, `admin_log_count`, `system_error`, `front_email`, `front_phone`, `front_google_map_embed`, `front_bhour_mon`, `front_bhour_tue`, `front_bhour_wed`, `front_bhour_thu`, `front_bhour_fri`, `front_bhour_sat`, `front_bhour_sun`, `founder_name`, `founder_tag`, `founder_desc`, `founder_cover`, `admin_post`, `meta_placeNAME`, `header_body_addon`)
-VALUES
-	(1,'Admin Name','WebbyCMS',1,1,'admin@domain.com','be4e5ec43257c4e574c9b956a49f91b0','','5649fe9cc98a66.61720547','2016-09-20','2:01 AM',0,'','','','','','','','','','','','','','','','admin','',''),
-	(2,'Notions','WebbyCMS',1,0,'superadmin','7e953d47c2851bca09158ac6d7fb2ec6','','5621fe81c98a66.61830547','2016-10-04','12:25 AM',2,'','','','','','','','','','','','','','','','superadmin','','');
-
-/*!40000 ALTER TABLE `db_admin` ENABLE KEYS */;
-UNLOCK TABLES;
 
 
 # Dump of table db_blog_post
@@ -110,18 +100,6 @@ CREATE TABLE `db_blog_post_category` (
   PRIMARY KEY (`cate_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-LOCK TABLES `db_blog_post_category` WRITE;
-/*!40000 ALTER TABLE `db_blog_post_category` DISABLE KEYS */;
-
-INSERT INTO `db_blog_post_category` (`cate_id`, `cate_name`, `cate_stat`, `cate_slug_url`)
-VALUES
-	(1,'General','','general'),
-	(2,'Blog','','blog'),
-	(3,'News','','news'),
-	(4,'Annoucement','','annoucement');
-
-/*!40000 ALTER TABLE `db_blog_post_category` ENABLE KEYS */;
-UNLOCK TABLES;
 
 
 # Dump of table db_blog_post_comments
@@ -144,6 +122,24 @@ CREATE TABLE `db_blog_post_comments` (
   `admin_id` int(11) NOT NULL,
   `comment_token` text NOT NULL,
   PRIMARY KEY (`comment_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+# Dump of table db_countries
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `db_countries`;
+
+CREATE TABLE `db_countries` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `countryCode` char(2) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `countryName` varchar(45) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
+  `currencyCode` char(3) NOT NULL,
+  `languages` varchar(100) NOT NULL,
+  `currencyRate` decimal(19,4) NOT NULL,
+  `gig88Region` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
@@ -250,21 +246,26 @@ CREATE TABLE `db_pages` (
   PRIMARY KEY (`page_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-LOCK TABLES `db_pages` WRITE;
-/*!40000 ALTER TABLE `db_pages` DISABLE KEYS */;
 
-INSERT INTO `db_pages` (`page_id`, `page_slug`, `backend_menu_name`, `page_stat`, `page_title`, `page_short_desc`, `page_desc`, `page_cover`, `page_pdate`, `page_ptime`, `page_keywords`, `meta_placeNAME`, `meta_location`, `meta_type`, `page_url`, `page_contents`)
-VALUES
-	(1,'home','Home','','','','','','2016-08-13','11:36 AM','','','','','',''),
-	(2,'about-us','About Us','','About Us','','','','2016-08-13','11:36 AM','','','','','',''),
-	(3,'contact-us','Contact Us','','','','','','2016-07-21','8:13 AM','','','','','',''),
-	(4,'services','Services','','','','','','2016-08-13','11:35 AM','','','','','',''),
-	(5,'blog','Blog','','','','','','2016-07-21','8:14 AM','','','','','',''),
-	(6,'gallery','Gallery','','','','','','2016-08-13','11:36 AM','','','','','',''),
-	(7,'policy','Privacy','','Privacy Policy','','','','0000-00-00','','','','','','','');
 
-/*!40000 ALTER TABLE `db_pages` ENABLE KEYS */;
-UNLOCK TABLES;
+# Dump of table db_partners
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `db_partners`;
+
+CREATE TABLE `db_partners` (
+  `partner_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `partner_name` text NOT NULL,
+  `partner_stat` varchar(1) NOT NULL DEFAULT '',
+  `partner_desc` text NOT NULL,
+  `partner_cover` text NOT NULL,
+  `partner_token` varchar(50) NOT NULL,
+  `partner_country` text NOT NULL,
+  `partner_state` text NOT NULL,
+  `partner_city` text NOT NULL,
+  PRIMARY KEY (`partner_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 
 # Dump of table db_products
@@ -328,18 +329,6 @@ CREATE TABLE `db_products_cate` (
   PRIMARY KEY (`cate_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-LOCK TABLES `db_products_cate` WRITE;
-/*!40000 ALTER TABLE `db_products_cate` DISABLE KEYS */;
-
-INSERT INTO `db_products_cate` (`cate_id`, `cate_name`, `cate_slug`, `cate_stat`, `cate_contents`, `cate_cover`, `cate_sort`, `cate_display`)
-VALUES
-	(1,'VLUTASEæ— ç¡«é…¸ç› ä¿®æŠ¤ç³»åˆ—','vlutaseæ— ç¡«é…¸ç›-ä¿®æŠ¤ç³»åˆ—','','','',0,0),
-	(2,'K2æ»‹æ¶¦ç³»åˆ—','k2æ»‹æ¶¦ç³»åˆ—','','','',0,0),
-	(3,'K2æœ‰æœºç³»åˆ—','k2æœ‰æœºç³»åˆ—','','','',0,0),
-	(4,'K2å¼¹æ€§ç³»åˆ—','k2å¼¹æ€§ç³»åˆ—','','','',0,0);
-
-/*!40000 ALTER TABLE `db_products_cate` ENABLE KEYS */;
-UNLOCK TABLES;
 
 
 # Dump of table db_products_cate_sub
@@ -423,23 +412,6 @@ CREATE TABLE `db_services` (
 
 
 
-# Dump of table db_teachers
-# ------------------------------------------------------------
-
-DROP TABLE IF EXISTS `db_teachers`;
-
-CREATE TABLE `db_teachers` (
-  `teacher_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `teacher_name` text NOT NULL,
-  `teacher_stat` varchar(1) NOT NULL,
-  `teacher_experiences` varchar(11) NOT NULL DEFAULT '',
-  `teacher_desc` text NOT NULL,
-  `teacher_cover` text NOT NULL,
-  PRIMARY KEY (`teacher_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-
 # Dump of table db_testimonial
 # ------------------------------------------------------------
 
@@ -488,18 +460,6 @@ CREATE TABLE `db_token` (
   PRIMARY KEY (`token_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-LOCK TABLES `db_token` WRITE;
-/*!40000 ALTER TABLE `db_token` DISABLE KEYS */;
-
-INSERT INTO `db_token` (`token_id`, `token_date`, `token_time`, `token_code`, `token_stat`)
-VALUES
-	(1,'2016-10-04','8:48 AM','fc5dc60d97494f8ab1dd9781f0fb1135',''),
-	(2,'2016-10-04','8:48 AM','e023139b3f714af11d1f2215c84a1287',''),
-	(3,'2016-10-04','8:48 AM','1b22e1e30074c2acf233309961bdc809',''),
-	(4,'2016-10-04','8:48 AM','fd8e0339bd326d88b5ccfc35bb73030e','');
-
-/*!40000 ALTER TABLE `db_token` ENABLE KEYS */;
-UNLOCK TABLES;
 
 
 # Dump of table db_visitor_log
@@ -517,37 +477,10 @@ CREATE TABLE `db_visitor_log` (
   `log_stat` varchar(1) NOT NULL,
   `log_unique` text NOT NULL,
   `log_count` int(11) NOT NULL,
+  `log_day_count` int(11) NOT NULL,
   PRIMARY KEY (`log_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-LOCK TABLES `db_visitor_log` WRITE;
-/*!40000 ALTER TABLE `db_visitor_log` DISABLE KEYS */;
-
-INSERT INTO `db_visitor_log` (`log_id`, `log_date`, `log_time`, `log_stamp_date`, `log_stamp_time`, `log_desc`, `log_stat`, `log_unique`, `log_count`)
-VALUES
-	(1,'2016-10-04','1:27 AM','0000-00-00','','','','57f294e4da516',0),
-	(2,'2016-10-04','1:29 AM','0000-00-00','','','','57f2955f77c63',0),
-	(3,'2016-10-04','1:29 AM','0000-00-00','','','','57f295686afff',0),
-	(4,'2016-10-04','1:32 AM','0000-00-00','','','','57f2961a923c2',0),
-	(5,'2016-10-04','1:46 AM','2016-10-04','1:50 AM','','','57f2997307654',0),
-	(6,'2016-10-04','3:59 AM','0000-00-00','','','','57f2b8894e0ad',0),
-	(7,'2016-10-04','6:20 AM','0000-00-00','','','','57f2d9cb522c4',0),
-	(8,'2016-10-04','8:23 AM','2016-10-04','8:25 AM','','','57f2f69b9306c',0),
-	(9,'2016-10-04','10:37 AM','0000-00-00','','','','57f315d0b7122',0),
-	(10,'2016-10-04','3:06 PM','0000-00-00','','','','57f35501a815f',0),
-	(11,'2016-10-04','6:56 PM','0000-00-00','','','','57f38aedc072e',0),
-	(12,'2016-10-04','7:03 PM','0000-00-00','','','','57f38c9815721',0),
-	(13,'2016-10-04','7:11 PM','0000-00-00','','','','57f38e700aef4',0),
-	(14,'2016-10-04','10:07 PM','0000-00-00','','','','57f3b796b27bb',0),
-	(15,'2016-10-04','10:07 PM','0000-00-00','','','','57f3b7adb6428',0),
-	(16,'2016-10-04','10:35 PM','0000-00-00','','','','57f3be2db0e8d',0),
-	(17,'2016-10-04','10:45 PM','0000-00-00','','','','57f3c08151735',0),
-	(18,'2016-10-05','12:26 AM','0000-00-00','','','','57f3d842cc2c3',0),
-	(19,'2016-10-05','6:39 AM','0000-00-00','','','','57f42f9442db7',0),
-	(20,'2016-10-05','9:47 AM','0000-00-00','','','','57f45ba698a45',0);
-
-/*!40000 ALTER TABLE `db_visitor_log` ENABLE KEYS */;
-UNLOCK TABLES;
 
 
 
