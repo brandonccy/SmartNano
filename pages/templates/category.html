@@ -1,0 +1,124 @@
+<?php
+$cateIDfromSlug=getProductCateSlug($cate, "cate_id");
+$cateName=getProductCategory($cateIDfromSlug, "cate_name");
+?>
+<div id="wrapper">
+  <!-- preloader -->
+  <div id="preloader">
+    <div id="spinner">
+      <img src="/images/preloaders/1.gif" alt="">
+    </div>
+    <div id="disable-preloader" class="btn btn-default btn-sm">Disable Preloader</div>
+  </div>
+  
+  <!-- Header -->
+  <?php include("pages/includes/layout/header.php"); ?>
+  
+  <!-- Start main-content -->
+  <div class="main-content">
+    <!-- Section: inner-header -->
+    <section class="inner-header divider parallax layer-overlay overlay-dark-5" data-parallax-ratio="0.7" data-bg-img="http://placehold.it/1920x1280">
+      <div class="container pt-100 pb-50"
+        <!-- Section Content -->
+        <div class="section-content pt-100">
+          <div class="row"> 
+            <div class="col-md-12">
+              <h3 class="title text-white"><?=$cateName?></h2>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </section>
+
+    <section class="">
+      <div class="container mt-30 mb-30 p-30">
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="row multi-row-clearfix">
+
+                <div class="products">
+
+                  <?php
+                  $result=getTable("db_products", "WHERE cate_id='".$cateIDfromSlug."' AND product_stat<>'3' AND product_display='1'");
+                  if(count($result)==0){ ?>
+                  <p>No products</p>
+                  <?php } ?>
+                  <?php foreach($result as $row){ ?>
+                  <div class="col-sm-6 col-md-4 col-lg-4 mb-30">
+                    <a href="/products/<?=$row["product_id"]?>-<?=$row["product_slug"]?>">
+                      <div class="product">
+                        
+                        <span class="tag-sale"><?=$row["product_SKU"]?></span>
+                        <?php $useThis=""; if($useThis=="yes"){ ?>
+                          <?php if($row["product_offer_price"]>0){ ?>
+                          <span class="tag-sale">Sale!</span>
+                          <?php } ?>
+                        <?php } ?>
+
+                        <div class="product-thumb"> 
+                          <img alt="" src="<?=$row["product_cover"]?>" class="img-responsive img-fullwidth">
+                          <div class="overlay">
+                            <div class="btn-product-view-details">
+                              <a class="btn btn-default btn-theme-colored btn-sm btn-flat pl-20 pr-20 btn-add-to-cart text-uppercase font-weight-700" 
+                              href="/products/<?=$row["product_id"]?>-<?=$row["product_slug"]?>">View detail</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-details text-center">
+                          <a href="#"><h5 class="product-title"><?=$row["product_name"]?> - <?=$row["product_tags"]?></h5></a>
+
+                          <?php $useThis=""; if($useThis=="yes"){ ?>
+                            <div class="price">
+                            <?php if($row["product_offer_price"]>0){ ?>
+                              <del><span class="amount"><?=$row["product_currency"]?> <?=$row["product_price"]?></span></del>
+                              <ins><span class="amount"><?=$row["product_currency"]?> <?=$row["product_offer_price"]?></span></ins>
+                            <?php }else{ ?>
+                              <ins><span class="amount"><?=$row["product_currency"]?> <?=$row["product_price"]?></span></ins>
+                            <?php } ?>
+                            </div>
+                          <?php } ?>
+
+                        </div>
+                      </div><!-- product -->
+                    </a>
+                  </div><!-- product -->
+                  <?php } ?>
+
+                  <?php $usePager="";if($usePager=="yes"){ ?>
+                  <div class="col-md-12">
+                    <nav>
+                      <ul class="pagination theme-colored">
+                        <li> <a href="#" aria-label="Previous"> <span aria-hidden="true">&laquo;</span> </a> </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">...</a></li>
+                        <li> <a href="#" aria-label="Next"> <span aria-hidden="true">&raquo;</span> </a> </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <?php } ?>
+
+                </div><!-- products-->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- end main-content -->
+  
+  <!-- Footer -->
+  <?php include("pages/includes/layout/footer.php"); ?>
+  
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a> </div>
+<!-- end wrapper --> 
+
+<!-- Footer Scripts -->
+<!-- JS | Custom script for all pages -->
+<script src="js/custom.js"></script>

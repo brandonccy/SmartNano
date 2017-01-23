@@ -1,0 +1,14 @@
+{
+	"tag": "HTML Header",
+	"header_menu_home": "Home",
+	"header_menu_about": "About",
+	"header_menu_product": "Products",
+	"header_menu_partners": "Partners",
+	"header_menu_contact": "Contact Us",
+	"header_menu_language": "简体中文",
+	"header_menu_chinese": "简体中文",
+	"header_menu_english": "English",
+
+	"tag": "Product Details Page",
+	"txt_related_product": "Related Products"
+}

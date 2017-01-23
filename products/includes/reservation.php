@@ -1,0 +1,81 @@
+<?php
+
+require_once('phpmailer/class.phpmailer.php');
+require_once('phpmailer/class.smtp.php');
+
+$mail = new PHPMailer();
+
+//SMTP Settings
+$mail->IsSMTP();
+$mail->SMTPAuth   = true; 
+$mail->SMTPSecure = "tls"; 
+$mail->Timeout       =   10;
+$mail->WordWrap    = 900; // RFC 2822 Compliant for Max 998 characters per line
+$mail->CharSet     = 'UTF-8';
+$mail->Encoding    = '8bit';
+$mail->Port    = '587';
+$mail->Host       = "email-smtp.us-east-1.amazonaws.com";
+$mail->Username   = "AKIAJQAARD74TPL73S7Q";
+$mail->Password   = "Ai1Auza+dIq/v5kyd8mSm89JYXnriHTeXA3KhaPa0iR9";
+
+$status = "false";
+
+if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
+    if( $_POST['reservation_name'] != '' AND $_POST['reservation_email'] != '' AND $_POST['reservation_phone'] != '') {
+
+        $name = $_POST['reservation_name'];
+        $email = $_POST['reservation_email'];
+        $phone = $_POST['reservation_phone'];
+        $person = $_POST['person_select'];
+
+        $subject = isset($subject) ? $subject : 'New Message | reservation Form';
+        $reservation_date = isset($_POST['reservation_date']) ? $_POST['reservation_date'] : '';
+
+        $botcheck = $_POST['form_botcheck'];
+
+        $toemail = 'brandon@kkbuddy.com'; // Your Email Address
+        $toname = 'VLKen@WebbyCMS';                // Receiver Name
+
+        if( $botcheck == '' ) {
+
+            $mail->SetFrom( "noreply@vlken.com" , "VLKEN@WebbyCMS" );
+            $mail->AddReplyTo( $email , $name );
+            $mail->AddAddress( $toemail , $toname );
+            $mail->Subject = $subject;
+
+            $name = isset($name) ? "Name: $name<br><br>" : '';
+            $email = isset($email) ? "Email: $email<br><br>" : '';
+            $phone = isset($phone) ? "Phone: $phone<br><br>" : '';
+            $person = isset($person) ? "Person: $person<br><br>" : '';
+            $reservation_date = isset($reservation_date) ? "Reservation: $reservation_date<br><br>" : '';
+
+            $referrer = $_SERVER['HTTP_REFERER'] ? '<br><br><br>This Form was submitted from: ' . $_SERVER['HTTP_REFERER'] : '';
+
+            $body = "$name $email $phone $person $reservation_date $referrer";
+
+            $mail->MsgHTML( $body );
+            $sendEmail = $mail->Send();
+
+            if( $sendEmail == true ):
+                $message = 'We have <strong>successfully</strong> received your Message and will get Back to you as soon as possible.';
+                $status = "true";
+            else:
+                $message = 'Email <strong>could not</strong> be sent due to some Unexpected Error. Please Try Again later.<br /><br /><strong>Reason:</strong><br />' . $mail->ErrorInfo . '';
+                $status = "false";
+            endif;
+        } else {
+            $message = 'Bot <strong>Detected</strong>.! Clean yourself Botster.!';
+            $status = "false";
+        }
+    } else {
+        $message = 'Please <strong>Fill up</strong> all the Fields and Try Again.';
+        $status = "false";
+    }
+} else {
+    $message = 'An <strong>unexpected error</strong> occured. Please Try Again later.';
+    $status = "false";
+}
+
+$status_array = array( 'message' => $message, 'status' => $status);
+echo json_encode($status_array);
+?>

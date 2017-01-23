@@ -1,0 +1,14 @@
+{
+	"tag": "HTML Header",
+	"header_menu_home": "首页",
+	"header_menu_about": "关于威肯",
+	"header_menu_product": "美发产品",
+	"header_menu_partners": "我们的加盟商",
+	"header_menu_contact": "与我们联系",
+	"header_menu_language": "English",
+	"header_menu_chinese": "简体中文",
+	"header_menu_english": "English",
+
+	"tag": "Product Details Page",
+	"txt_related_product": "相关产品"
+}

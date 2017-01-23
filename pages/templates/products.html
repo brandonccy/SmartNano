@@ -1,0 +1,244 @@
+<?php
+$productArray=explode("-", $cate);
+$productID=$productArray[0];
+$productName=getProduct($productID, "");
+$productPrice=getProduct($productID, "product_price");
+$productCurrency=getProduct($productID, "product_currency");
+$productOfferPrice=getProduct($productID, "product_offer_price");
+
+$productCateId = getProduct($productID, "cate_id");
+$productCateName = getProductCategory($productCateId, "cate_name");
+
+$productSKU = getProduct($productID, "product_SKU");
+$productPackage = getProduct($productID, "product_tags");
+$productUsage = getProduct($productID, "product_specs");
+
+$productCover=getProduct($productID, "product_cover");
+if($productCover==""){ $productCover="http://placehold.it/460x460"; }
+$productDesc=getProduct($productID, "product_contents");
+?>
+<div id="wrapper">
+  <!-- preloader -->
+  <div id="preloader">
+    <div id="spinner">
+      <img src="/images/preloaders/1.gif" alt="">
+    </div>
+  </div>
+  
+  <!-- Header -->
+  <?php include("pages/includes/layout/header.php"); ?>
+  
+  <!-- Start main-content -->
+  <div class="main-content">
+    <!-- Section: inner-header -->
+    <section class="inner-header divider parallax layer-overlay overlay-dark-5" data-parallax-ratio="0.7" data-bg-img="http://placehold.it/1920x1280">
+      <div class="container pt-100 pb-50">
+      </div>      
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-content">
+          <div class="row">
+            <div class="product">
+              <div class="col-md-5">
+                <div class="product-image">
+                  <div class="zoom-gallery">
+                    <a href="<?=$productCover?>" title="<?=$productName?>"><img src="<?=$productCover?>" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="product-summary">
+                  <h2 class="product-title"><?=$productName?></h2>
+                  <div class="product_review">
+                    <?php $useThis=""; if($useThis=="yes"){ ?>
+                    <ul class="review_text list-inline">
+                      <li>
+                        <div title="Rated 4.50 out of 5" class="star-rating"><span style="width: 90%;">4.50</span></div>
+                      </li>
+                    </ul>
+                    <?php } ?>
+                  </div>
+
+                  <?php $useThis=""; if($useThis=="yes"){ ?>
+                  <div class="price"> 
+                    <?php if($productOfferPrice>0){ ?>
+                      <del><span class="amount"><?=$productCurrency?> <?=$productPrice?></span></del> 
+                      <ins><span class="amount"><?=$productCurrency?> <?=$productOfferPrice?></span></ins>
+                    <?php }else{ ?>
+                      <ins><span class="amount"><?=$productCurrency?> <?=$productPrice?></span></ins>
+                    <?php } ?>
+                  </div>
+                  <?php } ?>
+
+                  <div class="category"><strong>SKU/代码:</strong> <?=$productSKU?></div>
+                  <div class="category"><strong>包装:</strong> <?=$productPackage?></div>
+
+                  <div class="cart-form-wrapper mt-30">
+                    <form enctype="multipart/form-data" method="post" class="cart">
+                      <input type="hidden" value="productID" name="add-to-cart">
+                      <div class="single_add_to_cart_button btn btn-theme-colored" data-toggle="modal" data-target="#myModal">咨询产品</div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="horizontal-tab product-tab">
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a href="#tab1" data-toggle="tab">产品简介</a></li>
+                    <li><a href="#tab2" data-toggle="tab">使用方法</a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="tab1">
+                      <p><?=nl2br($productDesc)?></p>
+                    </div>
+
+                    <div class="tab-pane fade" id="tab2">
+                      <p><?=nl2br($productUsage)?></p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 mt-30">
+              <h3 class="line-bottom"><?=translate("txt_related_product", $selectLanguage)?></h3>
+              <div class="row multi-row-clearfix">
+                <div class="products related">
+                  
+                  <?php
+                  $result=getTable("db_products", "WHERE cate_id='".$productCateId."' AND product_id<>'$productID' AND product_display='1' ORDER BY RAND() LIMIT 4");
+                  if(count($result)==0){ ?><p>No related products</p><?php }
+                  foreach($result as $row){
+                  ?>
+                  <div class="col-sm-6 col-md-3 col-lg-3 mb-30">
+                    <a href="/products/<?=$row["product_id"]?>-<?=$row["product_slug"]?>">
+                    <div class="product">
+                      
+                      <span class="tag-sale"><?=$row["product_SKU"]?></span>
+                      <?php $useThis=""; if($useThis=="yes"){ ?>
+                        <?php if($row["product_offer_price"]>0){ ?>
+                        <span class="tag-sale">Sale!</span>
+                        <?php } ?>
+                      <?php } ?>
+
+                      <div class="product-thumb"> 
+                        <img alt="" src="<?=$row["product_cover"]?>" class="img-responsive img-fullwidth">
+                        <div class="overlay">
+                          <div class="btn-product-view-details">
+                            <div class="btn btn-default btn-theme-colored btn-sm btn-flat pl-20 pr-20 btn-add-to-cart text-uppercase font-weight-700">View detail</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-details text-center">
+                        
+                        <a href="#"><h5 class="product-title"><?=$row["product_name"]?></h5>
+                        <?php $useThis=""; if($useThis=="yes"){ ?>
+                        <div class="star-rating" title="Rated 3.50 out of 5"><span style="width: 80%;">3.50</span></div>
+                        <?php } ?>
+
+                        <?php $useThis=""; if($useThis=="yes"){ ?>
+                        <div class="price">
+                          <?php if($row["product_offer_price"]>0){ ?>
+                            <del><span class="amount">MYR <?=$row["product_price"]?></span></del>
+                            <ins><span class="amount">MYR <?=$row["product_offer_price"]?></span></ins>
+                          <?php }else{ ?>
+                            <ins><span class="amount">MYR <?=$row["product_price"]?></span></ins>
+                          <?php } ?>
+                        </div>
+                        <?php } ?>
+
+                        </a>
+
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <?php } ?>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- end main-content -->
+  
+  <!-- Footer -->
+  <?php include("pages/includes/layout/footer.php"); ?>
+  
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a> </div>
+<!-- end wrapper --> 
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">向我们咨询</h4>
+      </div>
+      <div class="modal-body">
+        <p>
+          <form name="contact_form" class="" action="" method="post">
+          <input type="hidden" name="form" value="front-product_enquiry">
+          <input type="hidden" name="token" value="<?=$Token?>">
+          <input type="hidden" name="txtProduct" id="txtProduct" value="<?=$productID?>">
+
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <label for="form_name">您的姓名 <small>*</small></label>
+                  <input id="form_name" name="txtName" class="form-control" type="text" placeholder="请输入姓名" required="">
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <label for="form_email">您的电邮 <small>*</small></label>
+                  <input id="form_email" name="txtEmail" class="form-control required email" type="email" placeholder="请输入电邮">
+                </div>
+              </div>
+            </div>
+              
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="form_name">标题 <small>*</small></label>
+                  <input id="form_subject" name="txtTitle" class="form-control required" type="text" placeholder="请输入标题" value="咨询 <?=$productName?> - <?=$productPackage?> 有关资料">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="form_phone">您的电话号码</label>
+                  <input id="form_phone" name="txtPhone" class="form-control" type="text" placeholder="请输入电话号码">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="form_name">信息</label>
+              <textarea id="form_message" name="txtMessage" class="form-control required" rows="5" placeholder="请输入电话信息"></textarea>
+            </div>
+            <div class="form-group">
+              <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" value="" />
+              <button type="submit" class="btn btn-dark btn-theme-colored btn-flat mr-5" data-loading-text="Please wait..."><i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i> 发送</button>
+            </div>
+
+          </form>
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer Scripts -->
+<!-- JS | Custom script for all pages -->
+<script src="js/custom.js"></script>

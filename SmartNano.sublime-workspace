@@ -1,0 +1,880 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"admin",
+				"adminID"
+			],
+			[
+				"Credits",
+				"Credits"
+			],
+			[
+				"Book",
+				"Bookshelf"
+			],
+			[
+				"inp",
+				"inputIdentifier"
+			],
+			[
+				"pull",
+				"pull-right"
+			],
+			[
+				"ad",
+				"admin_role"
+			],
+			[
+				"post",
+				"post_id"
+			],
+			[
+				"po",
+				"post_id"
+			],
+			[
+				"form",
+				"form-control"
+			],
+			[
+				"item",
+				"itemCover"
+			],
+			[
+				"strP",
+				"strPage"
+			],
+			[
+				"cli",
+				"clientHeight"
+			],
+			[
+				"over",
+				"overflow"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"btn-",
+				"btn-info"
+			],
+			[
+				"action",
+				"actionSQL"
+			],
+			[
+				"c",
+				"col-\tcol-"
+			],
+			[
+				"str",
+				"strYear"
+			],
+			[
+				"strPa",
+				"strPageNumber"
+			],
+			[
+				"me",
+				"menubar-toggle-btn"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"app",
+				"app-main"
+			],
+			[
+				"men",
+				"mentionedArray"
+			],
+			[
+				"notis",
+				"notis_type"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"fo",
+				"foreach\tforeach …"
+			],
+			[
+				"admn",
+				"adminID"
+			],
+			[
+				"admin_",
+				"admin_username"
+			],
+			[
+				"bt",
+				"btn"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"gi",
+				"giftPoint"
+			],
+			[
+				"nex",
+				"nextDate"
+			],
+			[
+				"ran",
+				"rankCount"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"page",
+				"pageNumber"
+			],
+			[
+				"btn",
+				"btn-default"
+			],
+			[
+				"comment",
+				"comment_admin"
+			],
+			[
+				"ma",
+				"max\tAttr"
+			],
+			[
+				"bl",
+				"bolder"
+			],
+			[
+				"text",
+				"text-center"
+			],
+			[
+				"text-",
+				"text-muted"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"paddin",
+				"padding"
+			],
+			[
+				"padding",
+				"padding-right"
+			],
+			[
+				"post_",
+				"post_private"
+			],
+			[
+				"f",
+				"for\tAttr"
+			],
+			[
+				"txt",
+				"txtUsername"
+			],
+			[
+				"journal",
+				"journal_id"
+			],
+			[
+				"input",
+				"inputValue"
+			],
+			[
+				"real",
+				"realVoucherAmount"
+			],
+			[
+				"vou",
+				"realVoucherPer"
+			],
+			[
+				"voucer",
+				"voucher_amount"
+			],
+			[
+				"voucher",
+				"voucher_amount"
+			],
+			[
+				"re",
+				"realVoucherPer"
+			],
+			[
+				"vo",
+				"voucher_id"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"salary",
+				"salary_id"
+			],
+			[
+				"rs",
+				"result2"
+			],
+			[
+				"mysqli_fetch",
+				"mysqli_fetch_array"
+			],
+			[
+				"cobro",
+				"cobro_fees"
+			],
+			[
+				"tran",
+				"transfer_amount"
+			],
+			[
+				"transfer",
+				"transfer_name"
+			],
+			[
+				"tra",
+				"transfer_nric"
+			],
+			[
+				"tenan",
+				"tenant_nric"
+			],
+			[
+				"tena",
+				"tenant_name"
+			],
+			[
+				"net",
+				"net_intro_fees"
+			],
+			[
+				"gst",
+				"gst_amount"
+			],
+			[
+				"bala",
+				"balance_to_vendor"
+			],
+			[
+				"name",
+				"name_card_name"
+			],
+			[
+				"cal",
+				"claimUser"
+			],
+			[
+				"cate",
+				"case_type"
+			],
+			[
+				"case",
+				"case_type"
+			],
+			[
+				"staff",
+				"staff_level"
+			],
+			[
+				"gs",
+				"gst_pay_by"
+			],
+			[
+				"req",
+				"requestType"
+			],
+			[
+				"onkey",
+				"onkeyup\tAttr"
+			],
+			[
+				"cl",
+				"class\tAttr"
+			],
+			[
+				"new",
+				"newDataId"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"user",
+				"userID"
+			],
+			[
+				"col",
+				"colspan\tAttr"
+			],
+			[
+				"strto",
+				"strtoupper"
+			],
+			[
+				"select",
+				"selected"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"sel",
+				"selected"
+			],
+			[
+				"ic_no_",
+				"ic_no_first"
+			],
+			[
+				"form_sta",
+				"form_status"
+			],
+			[
+				"left",
+				"leftbarItem"
+			],
+			[
+				"mysql_in",
+				"mysql_insert_id"
+			],
+			[
+				"sess",
+				"session_start"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/brandonchong/SmartNano"
+	],
+	"file_history":
+	[
+		"/Users/brandonchong/SmartNano/.htaccess",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/common/languages/zh-ts.json",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/common/languages/zh-cn.json",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/common/languages/en-gb.json",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/userpage/includes/loadPostAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/includes/modals.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/includes/htmlstart.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/dashboard/index.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/includes/htmlend.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/dashboard/fullAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/admin-panel/fullAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/userpage/includes/deletePostConfirmAdminAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/userpage/includes/deletePostConfirmAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/default/index.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/common/functions.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/userpage/includes/confirmPurchaseItemAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/common/forms/user_login.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/common/forms/user-register.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/includes/post-module.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/notifications/index.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/common/forms/user-settings.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/common/forms/user-language.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/settings/fullAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/settings/includes/main.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/assets/js/fab/fab.css",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/assets/js/fab/fab.js",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/common/define.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/common/forms/post-new.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/notifications/fullAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/notifications/loadNotificationListAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/userpage/fullAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/userpage/includes/loadMonthYearPost.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/includes/js_includes.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/private-post/fullAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/settings/includes/transaction.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/settings/includes/shop.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/shop/fullAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/userpage/includes/updateGiftAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/userpage/includes/main.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/userpage/includes/updateFollowAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/notifications/notis_body.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/includes/member-item.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/includes/aside.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/includes/nav.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/default/error_log",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/common/admin.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/common/conn.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/common/languages/cn-tz.json",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/common/forms/post-save.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/admin-panel/adminForceUserUpdateAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/system_update.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/register/includes/main.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/assets/sass/app-sass/ui-components/_modals.scss",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/assets/js/slim/slim.kickstart.min.js",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/assets/sass/app-sass/ui-components/_widgets.scss",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/assets/sass/app.scss",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/assets/sass/fab.scss",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/transaction/fullAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/register/index.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/login/index.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/userpage/includes/sendCommentAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/index.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/modules/index.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/includes/post-item.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/my-collections/fullAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/userpage/includes/viewItemModalAjax.php",
+		"/Users/Shared/Admin Templates/Infinity-v2.0.0/default/gallery.1.html",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/userpage/includes/updateMemberCreditsAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/userpage/includes/loadBSideCalendarListAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/common/form.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/includes/bside.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/credits-mentions/fullAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/private-post/index.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/dashboard/memberList.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/notifications/untitled",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/private-post/error_log",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/includes/main.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/settings/index.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/growl.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/notifications/loadGrowlAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/assets/js/growl/jquery.growl.css",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/notification.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/userpage/includes/updateMemberAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/notifications/loadNotificationsBubbleAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/assets/css/core.css",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/assets/css/bootstrap.css",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/notifications/loadASideBubbleAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/version1.5/assets/css/uielements.css",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/worker/updateAdminRank.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/userpage/includes/loadNotificationListAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/userpage/includes/deleteCommentConfirmAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/assets/js/nametags/bootstrap-tagautocomplete.js",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/userpage/includes/loadFollowUsersAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/userpage/includes/loadASideBubbleAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/userpage/includes/loadNotificationsBubbleAjax.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/modules/user.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/modules/content.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/assets/css/app.css",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/version1.5/includes/main.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/version1.5/includes/nav.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/version1.5/includes/htmlstart.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/modules/forgot-password/index.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/version2/modules/forgot-password/index.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/version2/modules/login/index.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/version2/modules/register/includes/main.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/version2/includes/aside.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/version2/modules/notifications/index.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/version2/includes/nav.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/version2/includes/bside.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/version2/common/functions.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/version2/includes/modals.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/version2/includes/htmlend.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/version2/includes/htmlstart.php",
+		"/Users/Shared/Admin Templates/Infinity-v2.0.0/default/index.html",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/version2/includes/main.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/version2/default/index.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/version2/includes/js_includes.php",
+		"/Users/Shared/Admin Templates/Infinity-v2.0.0/default/inbox.html",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/version2/index.php",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/version2/default/error_log",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/version2/modules/userpage/includes/error_log",
+		"/Users/Shared/Admin Templates/Infinity-v2.0.0/default/dashboard.2.html",
+		"/Users/Shared/Admin Templates/Infinity-v2.0.0/default/dashboard.3.html",
+		"/Users/Shared/Admin Templates/Infinity-v2.0.0/default/documentation.html",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/test.php",
+		"/Users/Shared/Admin Templates/Infinity-v2.0.0/default/panels.html",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/assets/css/style.css",
+		"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp/libs/misc/datatables/datatables.min.js"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp",
+			"/Users/brandonchong/Google Drive/Production/Project/Journal/website/version2",
+			"/Users/brandonchong/Google Drive/Production/Project/Journal/website/admincp"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"{",
+			"postModal",
+			"fab",
+			"postModal",
+			"fab",
+			"loadPost",
+			"loadNewPostModal",
+			"hasClass",
+			"loadPost",
+			"modal",
+			"loadPost",
+			"fab",
+			"lo a d P o s t",
+			"loadPage",
+			"#F44336",
+			"loadNotificationsList",
+			"loadNotificationList",
+			"kc_fab",
+			"loadNewPostModal",
+			"Book",
+			"book",
+			"from",
+			"selectLanguage",
+			"Load More",
+			"Posts",
+			"《》",
+			"Posts",
+			"View",
+			"Vu e w",
+			"getTable",
+			"getSystem",
+			"slimBodyImage",
+			"txtFile",
+			"t.name",
+			"<div class=\"kc_fab_overlay\" ></div>",
+			"<section class=\"FAB\">",
+			"delete",
+			"/add/",
+			"myCarousel",
+			"getItem",
+			"window.location",
+			"follow",
+			"hidd",
+			"loadPage",
+			"userpage",
+			"db_shop_item",
+			"lo a d P a ge",
+			"slim",
+			"loadGrowl",
+			"pull-right",
+			".close",
+			"updateMember",
+			"_doRemove",
+			"remove",
+			"_onClick",
+			"slim-btn",
+			"remove",
+			"file",
+			"hidden",
+			"<input",
+			".promo-body",
+			"admin_i",
+			"version2",
+			"admincp/",
+			"footer",
+			"Widgets",
+			"pace",
+			"loading",
+			"progre",
+			"hr{",
+			"hr",
+			"separator",
+			"Web developer",
+			"John Doe",
+			"Write Something",
+			"main",
+			"User",
+			"users",
+			"query(\"SELECT",
+			"mysql_",
+			"box-mobile-menu",
+			"TOTAL",
+			"order_form",
+			"voucher_amount",
+			"offerAmount",
+			"voucher_amount",
+			"product_item_big",
+			"product_thumbnail",
+			"product_thumbnail_home",
+			"£",
+			".page-banner",
+			"£",
+			"container",
+			"color: #222",
+			"#222",
+			"script",
+			"mfp-b",
+			"popup",
+			"voucher_amount",
+			"voucher",
+			"voucher_prt",
+			"voucher",
+			"full-width",
+			"box-mobile-menu",
+			".product_thumbnail",
+			"product_thumbnail",
+			"cate_item",
+			"request",
+			"form_date",
+			"Document",
+			"downloine",
+			"showCloseSummary",
+			"cobro_agency_comp_name",
+			"cobro_agenct_ic",
+			"'$nameCardname'",
+			"Intro",
+			"getUser",
+			"<select",
+			"select",
+			"Leader",
+			"form_total",
+			"getForm",
+			"gotCoBro",
+			"Reember Me",
+			"DROPDOWN",
+			"showSummary",
+			"transaction_total",
+			"getTranStatus"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"#238cdf",
+			"pull-left",
+			"version2/",
+			"version2",
+			"query($con, \"SELECT",
+			"mysqli_",
+			"MYR ",
+			"MYR",
+			"color: #d5263b",
+			"'\".strtoupper($nameCardname).\"'",
+			"transaction_valid_total",
+			"<?=$curRef?>",
+			"getSalary($id, \"staff_id\")",
+			"db_sap",
+			"<b><?=strtoupper(getUser($row11[\"user_id\"], \"name_card_name\"))?></b>",
+			"<b><?=strtoupper(getUser($row10[\"user_id\"], \"name_card_name\"))?></b>",
+			"<b><?=strtoupper(getUser($row9[\"user_id\"], \"name_card_name\"))?></b>",
+			"<b><?=strtoupper(getUser($row8[\"user_id\"], \"name_card_name\"))?></b>",
+			"<b><?=strtoupper(getUser($row7[\"user_id\"], \"name_card_name\"))?></b>",
+			"<b><?=strtoupper(getUser($row6[\"user_id\"], \"name_card_name\"))?></b>",
+			"<b><?=strtoupper(getUser($row5[\"user_id\"], \"name_card_name\"))?></b>",
+			"<b><?=strtoupper(getUser($row4[\"user_id\"], \"name_card_name\"))?></b>",
+			"<b><?=strtoupper(getUser($row3[\"user_id\"], \"name_card_name\"))?></b>",
+			"<b><?=strtoupper(getUser($row2[\"user_id\"], \"name_card_name\"))?></b>",
+			"<b><?=strtoupper(getUser($row1[\"user_id\"], \"name_card_name\"))?></b>",
+			"<b><?=strtoupper(getUser($row[\"user_id\"], \"name_card_name\"))?></b>",
+			"db_data_14",
+			"\" - \"",
+			"src=\"/assets"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "SmartNano.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "Inno",
+		"selected_items":
+		[
+			[
+				"Inno",
+				"~/Google Drive/Production/Innovation Lifestyle/Website/Innovation-Lifestyle.sublime-project"
+			],
+			[
+				"billing",
+				"~/Google Drive/Production/Project/Billing/Website/myOBS.sublime-project"
+			],
+			[
+				"MJCS",
+				"~/www.mjcs/mjcs.my.sublime-project"
+			],
+			[
+				"KLNEW",
+				"~/KLNewCondo/KLNewCondo.sublime-project"
+			],
+			[
+				"Royal",
+				"~/Google Drive/Production/Royal Canin/Website/RoyalCanin.sublime-project"
+			],
+			[
+				"Account",
+				"~/Google Drive/Production/09 Accounting System/Sublime/AccountAWS.sublime-project"
+			],
+			[
+				"Proper",
+				"~/Google Drive/Production/PropertyClick.my/auction property/propertyClick.my.sublime-project"
+			],
+			[
+				"gig88",
+				"/Users/gig88-lead/GIG88/gig88.sublime-project"
+			],
+			[
+				"",
+				"~/Google Drive/Production/Royal Canin/Website/RoyalCanin.sublime-project"
+			],
+			[
+				"Acc",
+				"~/Google Drive/Production/09 Accounting System/Website(Scripts)/AccountingAWS.sublime-project"
+			],
+			[
+				"gig",
+				"/Users/Shared/Gig88.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 191.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
