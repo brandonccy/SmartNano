@@ -10,8 +10,8 @@ General Configurations of your web applications
 
 /* AWS Credential Setup */
 /* Make sure AWS PHP SDK is installed to root */
-$awsKey="AKIAISHB3TGPHJS6IGQA";
-$awsSecret="9cLb4XP3qaXWNYZtun0ZR/OfHyJalCi0WwNpA7C0";
+$awsKey="-";
+$awsSecret="-";
 $awsRegion="ap-southeast-1";
 $awsS3ImageBucket="img.vlken.com";
 // AWS
