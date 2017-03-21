@@ -13,7 +13,7 @@ General Configurations of your web applications
 $awsKey="-";
 $awsSecret="-";
 $awsRegion="ap-southeast-1";
-$awsS3ImageBucket="img.vlken.com";
+$awsS3ImageBucket="aws bucket name";
 // AWS
 $config = [
 	's3' => [  
@@ -27,20 +27,20 @@ $config = [
 
 /* Live Database Connection */
 $conn_mysql_host="localhost";
-$conn_mysql_username="snacncom_hexsys";
-$conn_mysql_password="abccy1982";
-$conn_mysql_database="snacncom_smartnano";
+$conn_mysql_username="database username";
+$conn_mysql_password="database password";
+$conn_mysql_database="database name";
 
 /* Development Database Connection */
 $conn_mysql_host_dev="localhost";
 $conn_mysql_username_dev="root";
 $conn_mysql_password_dev="1234";
-$conn_mysql_database_dev="vlken_db";
+$conn_mysql_database_dev="local_db";
 
 $systemDemo=""; /* If website need demo site set to "yes" */
 
 /* Here you can put your Localhost/Development Enviroment endpoint, so can be isolated from live database. */
-$localhost_dev="www.vlken";
+$localhost_dev="";
 
 /* Include PHP Variables and defines. */
 $languageArray=array("en-gb", "zh-cn");
