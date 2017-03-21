@@ -5,7 +5,7 @@
       <div class="container">
         <nav id="menuzord-right" class="menuzord">
           <a class="menuzord-brand pull-left flip" href="/">
-            <img src="/images/vlken-logo.png" alt="">
+            <img src="/images/smartnano-logo.png" alt="">
           </a>
           <ul class="menuzord-menu">
 
