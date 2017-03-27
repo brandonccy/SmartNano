@@ -387,6 +387,15 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "controller/conn.php",
+			"settings":
+			{
+				"buffer_size": 2494,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -753,8 +762,38 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "controller/conn.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2494,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								802,
+								802
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -812,9 +851,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "Inno",
+		"last_filter": "Mujur",
 		"selected_items":
 		[
+			[
+				"Mujur",
+				"/Users/Shared/MujurHartaERP/MujurHarta.sublime-project"
+			],
 			[
 				"Inno",
 				"~/Google Drive/Production/Innovation Lifestyle/Website/Innovation-Lifestyle.sublime-project"

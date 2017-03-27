@@ -27,9 +27,10 @@ $config = [
 
 /* Live Database Connection */
 $conn_mysql_host="localhost";
-$conn_mysql_username="database username";
-$conn_mysql_password="database password";
-$conn_mysql_database="database name";
+$conn_mysql_username="snacncom_hexsys";
+$conn_mysql_password="abccy1982";
+$conn_mysql_database="snacncom_smartnano";
+
 
 /* Development Database Connection */
 $conn_mysql_host_dev="localhost";
